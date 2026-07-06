@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stage-1-minimal-agent"
+version = "1.0.0"
+description = "Stage 1：使用 Python 实现的最小 Agent Loop"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+minimal-agent = "minimal_agent.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

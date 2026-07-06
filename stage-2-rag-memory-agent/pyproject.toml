@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stage-2-rag-memory-agent"
+version = "1.0.0"
+description = "Stage 2：具备 RAG、工具调用、记忆和引用校验的 Python 研究助手"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+research-agent = "research_agent.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
